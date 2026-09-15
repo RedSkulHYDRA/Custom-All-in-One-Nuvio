@@ -31,21 +31,6 @@
       "contentLanguage": ["en", "hi"]
     },
     {
-      "id": "allwish",
-      "name": "🌟 All-Wish",
-      "description": "All-Wish TV episodes via All-Wish servers",
-      "version": "1.0.1",
-      "author": "Kabir",
-      "supportedTypes": ["movie", "tv"],
-      "filename": "providers/allwish.js",
-      "enabled": true,
-      "hasSettings": true,
-      "limited": true,
-      "formats": ["mp4", "m3u8"],
-      "logo": "https://i.postimg.cc/WpFW45WQ/allwish.png",
-      "contentLanguage": ["en", "ja"]
-    },
-    {
       "id": "allmovieland",
       "name": "AllMovieLand",
       "description": "AllMovieLand streaming provider with multi-language support",
@@ -156,34 +141,6 @@
       "formats": ["m3u8", "mp4", "mkv"],
       "logo": "https://i.postimg.cc/jSQmk9B3/ctgmovies.png",
       "contentLanguage": ["en", "hi"]
-    },
-    {
-      "id": "dahmermovies",
-      "name": "Dahmermovies",
-      "description": "1080p Movies from Dahmermovies",
-      "version": "1.0.0",
-      "author": "Nuvio Team",
-      "supportedTypes": ["movie", "tv"],
-      "filename": "providers/dahmermovies.js",
-      "enabled": true,
-      "hasSettings": true,
-      "formats": ["mp4", "mkv", "m3u8"],
-      "logo": "https://i.postimg.cc/hGt3dV6Z/dhamermovies.png",
-      "contentLanguage": ["en"]
-    },
-    {
-      "id": "dahmermovies-tv",
-      "name": "Dahmermovies-TV",
-      "description": "Only works on Android TV",
-      "version": "1.0.1",
-      "author": "Nuvio Team",
-      "supportedTypes": ["movie", "tv"],
-      "filename": "providers/dahmermovies-4k.js",
-      "enabled": true,
-      "hasSettings": true,
-      "formats": ["mp4", "mkv", "m3u8"],
-      "logo": "https://i.postimg.cc/hGt3dV6Z/dhamermovies.png",
-      "contentLanguage": ["en"]
     },
     {
       "id": "dooflix",
@@ -713,11 +670,25 @@
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
       "filename": "providers/fibwatch.js",
-      "enabled": false,
+      "enabled": true,
       "hasSettings": true,
       "formats": ["mkv", "m3u8"],
       "logo": "https://i.postimg.cc/sfLR6dMm/fibwatch.png",
       "contentLanguage": ["en", "hi"]
+    },
+    {
+      "id": "vixsrc",
+      "name": "VixSrc",
+      "description": "VixSrc - The best place to watch movies and TV shows online for free. Stream in 1080p HD",
+      "version": "1.0.0",
+      "author": "Nuvio Team",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/vixsrc.js",
+      "enabled": true,
+      "hasSettings": true,
+      "formats": ["mp4", "m3u8"],
+      "logo": "https://i.postimg.cc/1tHrBvzs/vixsrc.png",
+      "contentLanguage": ["en", "Ita"]
     },
     {
       "id": "hianime",
@@ -747,20 +718,6 @@
       "formats": ["mkv", "m3u8"],
       "logo": "https://i.postimg.cc/3N2V7pHc/kurage.png",
       "contentLanguage": ["en", "ja"]
-    },
-    {
-      "id": "onlykdrama",
-      "name": "🫰 OnlyKDrama",
-      "description": "Asian Drama",
-      "version": "1.0.0",
-      "author": "Moiz Ahmed + Codex",
-      "supportedTypes": ["movie", "tv"],
-      "filename": "providers/onlykdrama.js",
-      "enabled": false,
-      "hasSettings": true,
-      "formats": ["mp4", "mkv", "m3u8"],
-      "logo": "https://i.postimg.cc/dtX84Gqc/onlykdrama.jpg",
-      "contentLanguage": ["ko"]
     },
     {
       "id": "kisskh",
@@ -847,18 +804,61 @@
       "contentLanguage": ["en"]
     },
     {
-      "id": "vixsrc",
-      "name": "VixSrc",
-      "description": "VixSrc - The best place to watch movies and TV shows online for free. Stream in 1080p HD",
+      "id": "allwish",
+      "name": "🌟 All-Wish",
+      "description": "All-Wish TV episodes via All-Wish servers",
+      "version": "1.0.1",
+      "author": "Kabir",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/allwish.js",
+      "enabled": false,
+      "hasSettings": true,
+      "limited": true,
+      "formats": ["mp4", "m3u8"],
+      "logo": "https://i.postimg.cc/WpFW45WQ/allwish.png",
+      "contentLanguage": ["en", "ja"]
+    },
+    {
+      "id": "onlykdrama",
+      "name": "🫰 OnlyKDrama",
+      "description": "Asian Drama",
+      "version": "1.0.0",
+      "author": "Moiz Ahmed + Codex",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/onlykdrama.js",
+      "enabled": false,
+      "hasSettings": true,
+      "formats": ["mp4", "mkv", "m3u8"],
+      "logo": "https://i.postimg.cc/dtX84Gqc/onlykdrama.jpg",
+      "contentLanguage": ["ko"]
+    },
+    {
+      "id": "dahmermovies",
+      "name": "Dahmermovies",
+      "description": "1080p Movies from Dahmermovies",
       "version": "1.0.0",
       "author": "Nuvio Team",
       "supportedTypes": ["movie", "tv"],
-      "filename": "providers/vixsrc.js",
+      "filename": "providers/dahmermovies.js",
       "enabled": false,
       "hasSettings": true,
-      "formats": ["mp4", "m3u8"],
-      "logo": "https://i.postimg.cc/1tHrBvzs/vixsrc.png",
-      "contentLanguage": ["en", "Ita"]
+      "formats": ["mp4", "mkv", "m3u8"],
+      "logo": "https://i.postimg.cc/hGt3dV6Z/dhamermovies.png",
+      "contentLanguage": ["en"]
+    },
+    {
+      "id": "dahmermovies-tv",
+      "name": "Dahmermovies-TV",
+      "description": "Only works on Android TV",
+      "version": "1.0.1",
+      "author": "Nuvio Team",
+      "supportedTypes": ["movie", "tv"],
+      "filename": "providers/dahmermovies-4k.js",
+      "enabled": false,
+      "hasSettings": true,
+      "formats": ["mp4", "mkv", "m3u8"],
+      "logo": "https://i.postimg.cc/hGt3dV6Z/dhamermovies.png",
+      "contentLanguage": ["en"]
     }
   ]
 }
